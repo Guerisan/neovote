@@ -1,0 +1,88 @@
+@media screen and (max-width: 768px) {
+  #burger {
+    display: flex;
+  }
+
+  .playfair_title {
+    font-size: 1.375rem;
+  }
+
+  header {
+    width: 100%;
+
+    .container {
+      position: relative;
+    }
+
+    .main_nav {
+      border-top: 3px inset $mainBlue;
+      position: absolute;
+      top: 3.4rem;
+      width: 100%;
+      background-color: #fff;
+      padding-top: 2rem;
+      opacity: 0;
+      transition: .6s ease-in-out;
+      transform: translateY(calc(-100% - 3.5rem));
+      z-index: 99;
+      height: calc(100vh - 3.5rem);
+      overflow: scroll;
+
+      > ul {
+        flex-direction: column;
+
+        li > ul {
+          position: initial;
+          opacity: 1;
+          box-shadow: none;
+          border-top: none;
+          visibility: initial;
+        }
+      }
+
+      .parent_menu {
+        background-color: #f8f8f8;
+        font-weight: 700;
+      }
+
+      .sub_menu {
+        padding-top: 0;
+      }
+    }
+
+    input[type="checkbox"]:checked ~ .main_nav {
+      transform: translateY(0);
+      opacity: 1;
+      z-index: 99;
+    }
+  }
+
+  .hero{
+    background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/banner_1_mobile.jpg");
+  }
+
+  .leader {
+    div {
+      margin: 0 1rem;
+    }
+
+    .numbers {
+      justify-self: initial;
+    }
+  }
+
+  .triptyque{
+    .small_tile{
+      padding: 1rem 1rem 3rem;
+    }
+  }
+  .environnement {
+    .small_window {
+      margin-top: 0;
+    }
+  }
+
+  .page_hero {
+    height: 20rem;
+  }
+}

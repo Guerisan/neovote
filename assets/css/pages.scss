@@ -1,0 +1,186 @@
+/*Pages de contenus du site */
+
+.page_hero {
+  height: 32rem;
+  background: url("../img/banner_2.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 7rem;
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  }
+}
+
+.content_title {
+  background-color: #fff;
+  padding: 2rem 2rem 0 2rem;
+  max-width: 42rem;
+  width: 100%;
+
+  .playfair_title {
+    margin: 1rem 0 2rem;
+    font-size: 3rem;
+  }
+}
+
+.partners {
+  margin-bottom: 7rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 4rem;
+  }
+
+  .partners_intro {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eff5f7;
+    padding: 1rem 0;
+  }
+
+  .playfair_title {
+    font-size: 1.05rem;
+  }
+}
+
+.processus {
+  .container {
+    max-width: 1200px;
+  }
+
+  margin-bottom: 7rem;
+
+  .playfair_title, .rubik_title {
+    text-align: center;
+  }
+
+  .playfair_title {
+    margin: .5rem 0 2rem
+  }
+}
+
+.checklist {
+  padding: 4rem 2.75rem;
+  border: $lightBorder;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 2rem 1rem;
+  }
+
+  li {
+    color: #333;
+    font-family: "Rubik", Helvetica, Arial, Lucida, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 2;
+    position: relative;
+    padding-left: 3rem;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      top: .1rem;
+      height: 1.5rem;
+      width: 1.5rem;
+      background: url("../img/check.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+}
+
+.experience {
+  margin-bottom: 5rem;
+
+  .playfair_title {
+    margin: .5rem 0 2rem;
+  }
+
+  .container:not(.page_content) {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .chapeau {
+    font-weight: 700;
+    position: relative;
+    padding-left: 2rem;
+
+    &:before {
+      content: ' ';
+      background-color: $mainBlue;
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      display: inline-block;
+    }
+  }
+
+  .classic_button {
+    margin-top: 3rem;
+  }
+}
+
+/*Pages de mentions légales*/
+
+.mentions_content,{
+  padding-bottom: 5rem;
+  margin-top: -2rem;
+
+}
+
+.mentions_content, .page_content{
+  p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+    line-height: 2;
+  }
+}
+
+.page_content {
+  max-width: 768px;
+  margin-top: 3rem;
+  p {
+    color: #666;
+  }
+
+  h3{
+    color: #333;
+  }
+
+  ul {
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+  }
+  li{
+    margin-bottom: .5rem;
+    list-style: disc outside;
+  }
+}
